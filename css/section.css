@@ -1,0 +1,110 @@
+section{
+    height: 68%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_prin{
+    width: 43%;
+    height: 100%;
+}
+
+#texto_prin{
+    width: 40%;
+    height: 70%;
+
+}
+
+#nome{
+    width: 100%;
+    height: 30%;
+
+    font-family: "Bebas Neue";
+    font-size: 5vw;
+    color: #FEAD0D;
+    display: flex;
+    align-items: center;
+}
+
+#sobrenome{
+    width: 100%;
+    height: 23%;
+
+    font-family: "Bebas Neue";
+    font-size: 5vw;
+    color: #FEAD0D;
+    display: flex;
+    align-items: center; 
+}
+
+#detalhes{
+    width: 100%;
+    height: 37%;
+    
+    font-family: "Noto Serif";
+    font-size: 1vw;
+    color: white;
+}
+
+#imagem{
+    position: absolute;
+    z-index: -1;
+    top: 18vh;
+    left: 7vw;
+
+    width: auto;
+    height: 67vh;
+}
+@media (max-width: 480px) {
+    body{
+        overflow: hidden;
+    }
+    section {
+        flex-direction: column; /* Altera a direção para coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        width: 100%; /* Garante que a seção ocupe toda a largura */
+    }
+
+    #img_prin {
+        width: 70%; /* Aumenta a largura da imagem */
+        height: auto; /* Mantém a proporção */
+    }
+
+    #texto_prin {
+        width: 70%; /* Aumenta a largura do texto */
+        height: auto; /* Ajusta a altura */
+        display: flex; /* Torna o contêiner flexível */
+        flex-direction: column; /* Organiza em coluna */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        margin-left: 10%; /* Adiciona margem à esquerda para mover para a direita */
+    }
+
+    #nome h1, #sobrenome h2 {
+        font-size: 17vw; /* Aumenta o tamanho da fonte */
+        margin: 0; /* Remove margens */
+    }
+
+    #nome, #sobrenome {
+        display: flex; /* Torna cada um um contêiner flexível */
+        justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+    }
+
+    #detalhes {
+        font-size: 3vw; /* Aumenta o tamanho da fonte */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    #imagem {
+        top: 30vh; /* Ajusta a posição da imagem de fundo */
+        left: 10vw; /* Ajusta a posição da imagem de fundo */
+        width: 120vw; /* Ajusta a largura da imagem de fundo */
+        height: auto; /* Mantém a proporção */
+        z-index: -2;
+    }
+}

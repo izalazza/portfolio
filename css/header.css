@@ -1,0 +1,130 @@
+header{
+    width: 90%;
+    height: 12%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 5%;
+}
+
+#logo{
+    width: 30%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icone_logo{
+    width: 4vw;
+    height: 4vw;
+
+    background-image: url(./../assets/img_principal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#profissao{
+    width: 80%;
+    height: 80%;
+
+    font-family: "Noto Serif";
+    font-size: 0.65vw;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#btns_cabecalho{
+    width: 40%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn_cabecalho{
+    width: 30%;
+    height: 50%;
+
+    border-radius: 10vw;
+    border: none;
+
+    background-color: #FF3DD2;
+
+    color: white;
+    font-size: 0.5vw;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.8vw;
+}
+
+.btn_cabecalho i{
+    font-size: 1vw;
+    color: white;
+}
+
+.btn_cabecalho i{
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_cabecalho:hover i{
+   font-size: 1.5vw;
+}
+
+@media (max-width: 480px) {
+    .btn_cabecalho h1 {
+        display: none;
+    }
+    .btn_cabecalho {
+        width: 10vw;
+        height: 10vw;
+        margin: 0 1vw; /* Adiciona um pequeno espaço entre os botões */
+        display: flex; /* Torna o botão um contêiner flexível */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+    }
+    .btn_cabecalho i {
+        font-size: 5vw;
+    }
+    #profissao {
+        font-size: 2vw;
+        margin: 0;
+        display: flex; /* Certifique-se de que o elemento seja flexível */
+        align-items: flex-start; /* Alinha o texto ao topo */
+        flex-direction: column; /* Permite a coluna para o botão e texto */
+    }
+    #icone_logo {
+        width: 10vw;
+        height: 10vw;
+    }
+    #logo {
+        width: 90%;
+        align-items: start;
+        justify-content: center;
+    }
+    #btns_cabecalho {
+        width: 65%; /* Mantém a largura dos botões */
+        flex-direction: row;
+        justify-content: flex-end; /* Alinha os botões à direita */
+        align-items: flex-start; /* Alinha os botões ao topo */
+        position: relative; /* Para o controle de posicionamento */
+        top: 1vw; /* Ajusta a posição para cima */
+    }
+    header {
+        height: 20%;
+    }
+}
